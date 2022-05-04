@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seguimiento</title>
+
+  <!--foto pequeña de flores ,de la parte superior -->
+  <link rel="shortcut icon" href="../img/Veranera.jpeg" type="image/x-icon">
+  <!--foto pequeña de flores ,de la parte superior -->
+  <!--Boostrap 5.1.3-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="product.css">
+</head>
+
+<body>
+  <!--DENTRO DE HEADER VA EL NAVBAR QUE ES LA BARRA DE NAVEGACION SUPERIOR-->
+  <header class="header" id="header">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <div class="container-fluid">
+        <img src="../img/planta.gif" alt="" style="width: 50px; border-radius: 50%;">
+        <!--border-raduis le da forma circular al icono -->
+
+        <!--AQUI SE ENCUENTRA EL BOTON QUE SE DESPLIEGA HACIA ABAJO EN EL NAVBAR CON SU RESPECTVIOS LINKS-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../nosotros/nosotros.html">Nosotros</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--IMAGENES DE LOS PROCESOS-->
+  <div class="container-fluid ">
+    <div class="row " >
+
+      <div class="m-2 col-sm-12 d-flex justify-content-between" >
+        <img src="../img/caja.png" alt="">
+        <img src="../img/box.png" alt="">
+        <img src="../img/entrega-rapida.png" alt="">
+        <img src="../img/bolsa-de-la-compra.png" alt="">
+      </div>
+    </div>
+    <!--BARRA DE PROGRESO   -->
+    <div class="container">
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:33%"></div>
+      </div>
+    </div>
+
+    <!--NOMBRE DE LOS PROCESOS-->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="m-3 col-sm-12 d-flex justify-content-between">
+          <h5>Procesando orden</h5>
+          <h5>Producto enviado</h5>
+          <h5>Producto en ruta</h5>
+          <h5>Compra entregada</h5>
+        </div>
+      </div>
+    </div>
+
+    <!--DATOS ADICIONALES DEL PEDIDO-->
+    <div class="container">
+
+      <div class="m-4 table-responsive">
+        <h2>Datos del pedido</h2>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Número de pedido</th>
+              <th>Nombre</th>
+              <th>Apellido</th>
+              <th>Comuna</th>
+              <th>Dirección</th>
+              <th>Número</th>
+              <th>Número de contacto</th>
+              <th>E-mail</th>
+              <th>Código postal</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>456123987565</td>
+              <td>Francisco</td>
+              <td>Juillet</td>
+              <td>Puente Alto</td>
+              <td>Av. México</td>
+              <td>0653</td>
+              <td>+56999568420</td>
+              <td>fr.juillet@duocuc.cl</td>
+              <td>8150000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <!--CANCELAR-->
+    <ul class="nav d-flex justify-content-center">
+      <li class="nav-item d-flex justify-content-center">
+        <a class="nav-link " href="../tienda/Tiendaprincipal.html">Volver a la tienda</a>
+      </li>
+    </ul>
+
+    <!--Parte final de la pagina el footer-->
+    <footer class=" py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="../index.html" class="nav-link px-2 text-muted">Inicio</a></li>
+          <li class="nav-item"><a href="../nosotros/nosotros.html" class="nav-link px-2 text-muted">Nosotros</a></li>
+
+      </ul>
+      <p class="text-center text-muted">&copy; 2022 Fundación "El Jardincito", Inc</p>
+  </footer>
+  <!--Parte final de la pagina el footer-->
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
