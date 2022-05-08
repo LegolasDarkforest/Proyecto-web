@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donación</title>
+    <!--foto pequeña de flores ,de la parte superior -->
+    <link rel="shortcut icon" href="{% static 'app/img/Veranera.jpeg' %}" type="image/x-icon">
+    <!--foto pequeña de flores ,de la parte superior -->
+
+
+    <!--Boostrap 5.1.3-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="text-center">
+
+    <main class="form-signin d-flex justify-content-center">
+        <!--PARA QUE SE CENTRE EL TEXTO-->
+
+
+
+        <form>
+
+            <hr class="my-4">
+
+            <h4 class="mb-3">Método de pago</h4>
+
+            <div class="my-3">
+                <div class="form-check">
+                    <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+                    <label class="form-check-label" for="credit">Tarjeta de crédito</label>
+                </div>
+                <div class="form-check">
+                    <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                    <label class="form-check-label" for="debit">Tarjeta de débito</label>
+                </div>
+                <div class="form-check">
+                    <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                    <label class="form-check-label" for="paypal">PayPal</label>
+                </div>
+            </div>
+
+            <div class="row gy-3 d-flex justify-content-center">
+                <div class="col-md-6">
+                    <label for="cc-name" class="form-label">Nombre de tarjeta</label>
+                    <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                    <small class="text-muted">Nombre completo como se muestra en la tarjeta</small>
+                    <div class="invalid-feedback">
+                        Se requiere el nombre de la tarjeta.
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="cc-number" class="form-label">Número de tarjeta</label>
+                    <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                    <div class="invalid-feedback">
+                        Se requiere un número de tarjeta.
+                    </div>
+                </div>
+
+
+                <div class="col-md-3 ">
+                    <label for="cc-expiration" class="form-label">Fecha expiración</label>
+                    <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                    <div class="invalid-feedback">
+                        Se requiere una fecha de expiración.
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <label for="cc-cvv" class="form-label">CVV</label>
+                    <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                    <div class="invalid-feedback">
+                        Se requiere CVV.
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-4">
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="sm-col-12">
+                        <a class="w-25 btn btn-lg btn-dark" href="../index" type="submit"> Donar </a>
+                    </div>
+                </div>
+            </div>
+                        <!--CANCELAR-->
+            <ul class="nav d-flex justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link " href="../index">Volver al inicio</a>
+                </li>
+            </ul>
+
+
+            <p class="mt-5 mb-3 text-muted">&copy; 2020–2022</p>
+        </form>
+    </main>
+
+    <!--Parte final de la pagina el footer-->
+    <footer class=" py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="../index.html" class="nav-link px-2 text-muted">Inicio</a></li>
+            <li class="nav-item"><a href="../nosotros/nosotros.html" class="nav-link px-2 text-muted">Nosotros</a></li>
+
+        </ul>
+        <p class="text-center text-muted">&copy; 2022 Fundación "El Jardincito", Inc</p>
+    </footer>
+    <!--Parte final de la pagina el footer-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
